@@ -1,0 +1,107 @@
+/* Import tailwind */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html,
+body {
+  font-family: 'Poppins', sans-serif
+}
+
+@media screen and (min-width: 1220px) {
+  .foundersgrit{
+    background-image: url('/grit.png');
+    height: 905px;
+  }
+
+  .marquee {
+    height: 600px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #272727 74%, #000000 26%);
+  }
+  
+  .inner_marquee{
+    will-change: transform;
+    animation: marquee 60s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(10); }
+    to { transform: translateX(-116%); }
+  }
+}
+
+/* For mobile screens */
+@media screen and (max-width: 1220px) {
+  .foundersgrit{
+    background-image: url('/mobilegrit.png');
+    height: 350px;
+  }
+  .marquee {
+    height: 330px;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #272727 71%, #000000 24%);
+  }
+  
+  .inner_marquee{
+    will-change: transform;
+    animation: marquee 50s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(10); }
+    to { transform: translateX(-274%); }
+  }
+}
+
+.heading{
+  background: linear-gradient(to right,#fff 20%, #0B5FFF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heading-1{
+  background: linear-gradient(to right,#fff 25%, #0B5FFF);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.comments{
+  background-image: url('/gradient.png');
+}
+
+.events {
+  height: 430px;
+  overflow: hidden;
+}
+
+.inner_events{
+  will-change: transform;
+  animation: events 60s linear infinite;
+}
+
+@keyframes events {
+  from { transform: translateX(10); }
+  to { transform: translateX(-78%); }
+}
+
+.mbcommentsbg{
+  background-image: url('/gradient.png');
+  height: 350px;
+}
+
+.mbcomments {
+  height: 260px;
+  overflow: hidden;
+}
+
+.inner_mbcomments{
+  will-change: transform;
+  animation: mbcomments 90s linear infinite;
+}
+
+@keyframes mbcomments {
+  from { transform: translateX(10); }
+  to { transform: translateX(-79%); }
+}
